@@ -6,11 +6,8 @@ from django.core.management.base import BaseCommand, CommandError
 from users.models import *
 from django.contrib.auth.models import User
 
-django.setup()
-
-
-fake = Faker()
-
+django.setup() 
+fake = Faker() #initializing Faker
 timezones_list = pytz.common_timezones
 
 def populate_user():
@@ -50,10 +47,6 @@ def populate_activity_period():
 
 class Command(BaseCommand):
     help = "loads the dummy data into the models"
-
-    def add_arguments(self, parser):
-        pass
-        # parser.add_argument('poll_ids', nargs='+', type=int)
 
     def handle(self, *args, **options):
         print("\npopulating dummy date in database...")
