@@ -25,7 +25,7 @@ python manage.py load_activity_data
 python manage.py runserver
 ```
 
-## GET the user activity data go to
+## user activity data url
 
 ```sh
 api/users/activities/
