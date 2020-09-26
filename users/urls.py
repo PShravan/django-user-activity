@@ -4,6 +4,8 @@ from .views import *
 
 
 urlpatterns = [
+    path('',
+         home, name="home"),
     path('api/users/activities/',
          users_activity, name="users-activity"),
 ]
