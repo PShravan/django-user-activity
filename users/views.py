@@ -9,7 +9,7 @@ from django.contrib.auth.models import User
 # Create your views here.
 
 def home(request):
-    html="<html><body>go to <a href='/api/users/activities/'></a></body></html>"
+    html="<html><body>go to this <a href='/api/users/activities/'>link</a> for user activities data</body></html>"
     return HttpResponse(html)
 
 @api_view(['GET',])
