@@ -16,7 +16,7 @@ def users_activity(request):
             user_activities =  ActivityPeriod.objects.filter(user=user)
             for activity in user_activities:
                 tz = activity.timezone
-                activity_periods.append({"start_time": activity.start_time.strftime("%b %d %Y %H:%M%p"), "end_time": activity.end_time.strftime("%b %d %Y %H:%M%p")})#, "timezone": activity.start_time.tzname()})
+                activity_periods.append({"start_time": activity.start_time.strftime("%b %-d %Y  %-H:%M%p"), "end_time": activity.end_time.strftime("%b %-d %Y  %-H:%M%p")})#, "timezone": activity.start_time.tzname()})
             members.append({"id": user.id, "real_name": user.get_full_name(), "tz": tz, "activity_periods":activity_periods})
 
         return Response({"ok": True, "members": members})
