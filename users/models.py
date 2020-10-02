@@ -8,5 +8,5 @@ class ActivityPeriod(models.Model):
     end_time = models.DateTimeField()
     timezone = models.CharField(max_length=50)
 
-    def __str__(self):
-        return self.user
+    # def __str__(self):
+    #     return self.timezone
