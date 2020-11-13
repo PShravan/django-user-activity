@@ -1,5 +1,5 @@
 # user_activity project
-user activity is a RESTful api for retrieving the user activity data from database
+user activity is a django RESTful api for retrieving the user activity data from database
 
 ## setup venv
 
