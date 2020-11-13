@@ -1,4 +1,5 @@
-# fullthrottle user_activity project
+# user_activity project
+user activity is a RESTful api for retrieving the user activity data from database
 
 ## setup venv
 
